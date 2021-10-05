@@ -12,7 +12,7 @@ const share = () => {
 		responseType: 'blob',
 	})
 		.then((response) => {
-			const pdf = new File([response], `id.pdf`, {
+			const pdf = new File([response?.data], `id.pdf`, {
 				type: 'application/pdf',
 			})
 			const files = [pdf]
