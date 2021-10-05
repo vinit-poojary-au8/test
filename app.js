@@ -8,7 +8,9 @@ button.addEventListener('click', (e) => {
 })
 
 const share = () => {
-	axios.get('/dummy.pdf', { responseType: 'blob' })
+	axios.get('https://cdn.filestackcontent.com/wcrjf9qPTCKXV3hMXDwK', {
+		responseType: 'blob',
+	})
 		.then((response) => {
 			const pdf = new File([response], `id.pdf`, {
 				type: 'application/pdf',
