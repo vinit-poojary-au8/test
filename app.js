@@ -10,7 +10,7 @@ button.addEventListener('click', (e) => {
 const share = () => {
 	axios.get('/dummy.pdf', { responseType: 'blob' })
 		.then((response) => {
-			const pdf = new File([response], `${id}.pdf`, {
+			const pdf = new File([response], `id.pdf`, {
 				type: 'application/pdf',
 			})
 			const files = [pdf]
