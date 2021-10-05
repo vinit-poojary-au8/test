@@ -1,4 +1,4 @@
-const axios = require('axios').default
+// const axios = require('axios').default
 
 const button = document.querySelector('.shareButton')
 
@@ -22,19 +22,19 @@ const share = () => {
 				})
 					.then(() => {
 						console.log('Share was successful.')
-						message.success('Share was successful.')
+						// message.success('Share was successful.')
 					})
 					.catch((error) => {
 						console.log('Sharing failed', error)
-						message.error('Sharing failed', error)
+						// message.error('Sharing failed', error)
 					})
 			} else {
 				console.log(`Your system doesn't support sharing files.`)
-				message.info(`Your system doesn't support sharing files.`)
+				// message.info(`Your system doesn't support sharing files.`)
 			}
 		})
 		.catch((error) => {
 			console.log(error)
-			message.error(error)
+			// message.error(error)
 		})
 }
